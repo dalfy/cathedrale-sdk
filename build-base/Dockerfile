@@ -5,7 +5,7 @@ RUN echo "deb     http://archive.ubuntu.com/ubuntu/ yakkety universe" >> /etc/ap
 RUN echo "deb-src http://archive.ubuntu.com/ubuntu/ yakkety universe" >> /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    apt-get update &&
+    apt-get update && \
     apt-get install -y --allow-unauthenticated \
         curl wget \
         cmake cmake-data \
